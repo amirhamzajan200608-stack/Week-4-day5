@@ -335,13 +335,6 @@
     width: 100%;
     min-height: 580px;
     background-color: #f0f5f8;
-    background-image: repeating-linear-gradient(
-        75deg,
-        transparent 0px,
-        transparent 10px,
-        rgba(255, 255, 255, 0.7) 10px,
-        rgba(255, 255, 255, 0.7) 16px
-    );
     overflow: hidden;
 }
 .licenses-content{
