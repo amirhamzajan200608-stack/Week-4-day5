@@ -264,5 +264,160 @@
         line-height: 1.4;
     }
 }
-
-    
+.section{
+    width: 100%;
+    background: #242424;
+    color: white;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.content{
+    max-width: 1110px;
+    min-height: 430px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.text{
+    width: 65%;
+    padding: 40px 0;
+    position: relative;
+    z-index: 2; 
+}
+.text h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 25px; 
+}
+.lists{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}  
+.list p{
+    font-size: 13px;
+    color: #d4d4d4;
+    line-height: 1.5;
+    margin-bottom: 13px;
+    position: relative;
+    padding-left: 12px;
+}
+.list p::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 6px;
+    height: 6px;
+    background: #36b875;
+    border-radius: 50%;
+}
+.image{
+    width: 35%;
+    height: 430px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: contain;
+}
+.licenses-section{
+    margin-top: 100px;
+    width: 100%;
+    min-height: 580px;
+    background-color: #f0f5f8;
+    background-image: repeating-linear-gradient(
+        75deg,
+        transparent 0px,
+        transparent 10px,
+        rgba(255, 255, 255, 0.7) 10px,
+        rgba(255, 255, 255, 0.7) 16px
+    );
+    overflow: hidden;
+}
+.licenses-content{
+    max-width: 1020px;
+    margin: auto;
+    padding: 90px 0;
+}
+.licenses-content h1{
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 45px;
+}
+.licenses-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+.licenses-card{
+    width: 100%;
+    height: 290px;
+    background: white;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+.licenses-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+@media (max-width: 600px) {
+    .content {
+        min-height: auto;
+        padding: 30px 18px 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .text {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .text h1 {
+        font-size: 21px;
+        line-height: 1.4;
+        margin-bottom: 22px;
+    }
+    .lists {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .list p {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+    .image {
+        width: 100%;
+        height: 280px;
+    }
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: bottom center;
+    }
+    .licenses-section {
+        min-height: auto;
+    }
+    .licenses-content {
+        padding: 45px 18px;
+    }
+    .licenses-content h1 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .licenses-list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
+    }
+    .license-card {
+        height: 230px;
+    }
+}
