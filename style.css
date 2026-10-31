@@ -166,7 +166,7 @@
         flex-wrap: wrap;
     }
     .top p{
-        font-size: 10px;
+        display: none;
     }
     .second{
         padding: 12px;
@@ -175,13 +175,13 @@
         gap: 15px;
     }
     .second p{
-        font-size: 12px;
+        display: none;
     }
     .logo img{
         width: 90px;
     }
     .menu{
-        margin: 15px;
+        display: none;
     }
     .container{
         margin: 20px 15px;
