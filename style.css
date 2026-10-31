@@ -1,21 +1,268 @@
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    font-family: sans-serif;
+.top{
+   max-width: 1100px;
+   margin: auto;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
 }
-.button{
-    width: 170px;
-    height: 50px;
-    background: #279A59;
-    border-radius: 20px;
-    font-family: sans-serif;
+.top p{
+    font-size: 10px;
+    color: #777;
 }
-.button h1{
-    font-size: 15px;
-    margin-top: 15px;
-    text-align: center;
+.top .green-btn{
+    background: #2eaf69;
     color: white;
-    font-family: sans-serif;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+.second{
+    max-width: 1100px;
+    margin: 5px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+.second p{
+    font-size: 12px;
+    white-space: nowrap;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    max-width: 1110px;
+    margin: 15px auto 0px;
+}
+.menu p{
+    font-size: 10px;
+    color: #888;
+}
+.container{
+    max-width: 1110px;
+    margin: 20px auto;
+}
+.main-title{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.banners{
+    display: flex;
+    gap: 20px;
+}
+.banner{
+    width: 50%;
+    height: 300px;
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+.banner-green{
+    background: linear-gradient(120deg, #35b96d, #219c58);
+}
+.banner-blue{
+    background: linear-gradient(120deg, #20c4d0, #23b7ca);
+}
+.banner h2{
+    font-size: 23px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.banner p:not(.date):not(.more){
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 250px;
+    position: relative;
+}
+.banner .date{
+    font-size: 12px;
+    margin-top: 15px;
+    position: relative;
+}
+.banner .more{
+    display: inline-block;
+    background: white;
+    color: #239f61;
+    padding: 9px 30px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 15px;
+    position: relative;
+}
+.banner img{
+    width: 48%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.third{
+    margin-top: 150px;
+}
+.third h1, .popular h1{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.steps{
+    display: flex;
+    gap: 20px;
+}
+.step{
+    flex: 1;
+    min-height: 230px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 18px #00000018;
+}
+.circle img{
+    width: 65px;
+    height: 65px;
+}
+.step p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+.popular{
+    margin-top: 100px;
+}
+.analysis-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.analysis-card{
+    border: 1px solid #dce2e8;
+    border-radius: 4px;
+    padding: 20px;
+    min-height: 230px;
+}
+.icon img{
+    width: 45px;
+    height: 45px;
+}
+.analysis-card h3{
+    color: #2eaf69;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.analysis-card p{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.analysis-card .line{
+    width: 45px;
+    height: 2px;
+    background: #2eaf69;
+    margin-top: 0px;
+}
+@media (max-width: 500px){
+    .top{
+        height: auto;
+        padding: 12px;
+        flex-wrap: wrap;
+    }
+    .top p{
+        font-size: 10px;
+    }
+    .second{
+        padding: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+    .second p{
+        font-size: 12px;
+    }
+    .logo img{
+        width: 90px;
+    }
+    .menu{
+        margin: 15px;
+    }
+    .container{
+        margin: 20px 15px;
+    }
+    .min-title{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .banners{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .banner{
+        width: 400px;
+        height: 230px;
+        padding: 18px;
+    }
+    .banner h2{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    .banner p:not(.dote):not(.more){
+        font-size: 11px;
+        max-width: 58%;
+        line-height: 1.5;
+    }
+    .banner .more{
+        font-size: 10px;
+        padding: 7px 20px;
+        margin-top: 8px;
+    }
+    .banner img{
+        width: 50%;
+    }
+    .third{
+        margin-top: 65px;
+    }
+    .third h1, .popular h1{
+        font-size: 23px;
+        margin-bottom: 22px;
+    }
+    .steps{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .step{
+        min-height: auto;
+        padding: 20px;
+    }
+    .circle img{
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    .step p{
+        font-size: 13px;
+    }
+    .popular{
+        margin-top: 65px;
+    }
+    .analysis-list{
+        grid-template-columns: repeat(1,1fr);
+        gap: 12px;
+    }
+    .analysis-card{
+        padding: 12px;
+        min-height: 190px;
+    }
+    .icon img{
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    .analysis-card h3{
+        font-size: 13px;
+    }
+    .analysis-card p{
+        font-size: 10px;
+        line-height: 1.4;
+    }
 }
 
     
