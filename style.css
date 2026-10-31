@@ -173,6 +173,7 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 15px;
+        height: ;
     }
     .second p{
         display: none;
@@ -372,6 +373,9 @@
     display: block;
 }
 @media (max-width: 600px) {
+    .section{
+        height: 700px;
+    }
     .content {
         min-height: 600px;
         padding: 30px 18px 0;
